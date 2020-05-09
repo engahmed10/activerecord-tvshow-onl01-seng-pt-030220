@@ -19,7 +19,7 @@ class Show  < ActiveRecord::Base
 
 
   def self.ratings_sum
-     Show.sum("orders_count")
+     Show.sum("rating")
   end
 
 end
