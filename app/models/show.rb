@@ -24,7 +24,6 @@ class Show  < ActiveRecord::Base
 
   def self.popular_shows
       Show.where(rating: > 5)
-      Client.where(first_name: 'Ryan').count
   end
 
 end
